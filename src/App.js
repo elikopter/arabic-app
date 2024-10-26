@@ -7,24 +7,23 @@ import MemoryGame from './Memory';
 
 const App = () => {
   return (
-   
-   <div>amitai ameleh</div>
+ 
       
+   <Router>
+    
+   <Routes>
+     <Route path="/" element={<Home />} />
+     <Route path="/quiz/:category" element={<Quiz />} />
+     <Route path="/memory/:category" element={<MemoryGame />} />
+     <Route path="/Notes/:category" element={<Notes />} />
 
+   </Routes>
+       </Router>
+   
   );
 };
 
 export default App;
 
-/*
-         <Router>
-    
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/quiz/:category" element={<Quiz />} />
-        <Route path="/memory/:category" element={<MemoryGame />} />
-        <Route path="/Notes/:category" element={<Notes />} />
 
-      </Routes>
-          </Router>
-      */
+ 
